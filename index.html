@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real time Chat-App</title>
+    <link rel="shortcut icon" href="./chat.png" type="image/x-icon">
+   <script defer src="http://192.168.0.28:8000/socket.io/socket.io.js"></script>
+    <script defer src="./js/client.js"></script>
+   <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <video autoplay loop muted class="background-video">
+        <source src="./159052-818026310_medium.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <nav>
+        <img class="logo" src="./chat.png" alt="">
+        <h1>WellCome to <span style="color: rgb(34, 145, 255);" >MyChat-APP</span> </h1>
+    </nav>
+    <div class="container">
+        <div class="msg">
+            <h1 style="font-size: 20px;">You're just a message away from making new friends!</h1>
+        </div>
+        <!-- <div class="message-right">Harry: how are you?</div>
+        <div class="message-left">Rohan: Bhai i am fine.How about you!</div> -->
+    </div>
+
+    <div class="send">
+        <form action="#" id="send-container">
+            <input type="text" name="messageInp" placeholder="Type your message here" id="messageInp">
+            <button class="btn" type="submit">Send</button>
+    </form>
+    </div>
+</body>
+</html>
